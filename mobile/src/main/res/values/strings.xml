@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SmartWatchDataCollection</string>
+
+    <string name="name">Your Name:</string>
+    <string name="counter">Number of Trail:</string>
+    <string name="buttonnext">Next Trail</string>
+    <string name="buttonstart">Start!</string>
+    <string name="buttondelete">Delete!</string>
+    <string name="action_settings">Settings</string>
+</resources>
