@@ -131,9 +131,9 @@ public class MainActivity extends Activity implements DataApi.DataListener{
                     String filename = editTextn.getText().toString() +editTextc.getText().toString()+".txt";
                     String filenameg = editTextn.getText().toString() +editTextc.getText().toString()+"g.txt";
                     String filenameh = editTextn.getText().toString() +editTextc.getText().toString()+"h.txt";
-                    file  = new File(Environment.getExternalStorageDirectory()+"/DCIM",filename);
-                    fileg  = new File(Environment.getExternalStorageDirectory()+"/DCIM",filenameg);
-                    fileh  = new File(Environment.getExternalStorageDirectory()+"/DCIM",filenameh);
+                    file  = new File(Environment.getExternalStorageDirectory()+"/SensorData",filename);
+                    fileg  = new File(Environment.getExternalStorageDirectory()+"/SensorData",filenameg);
+                    fileh  = new File(Environment.getExternalStorageDirectory()+"/SensorData",filenameh);
                     if(!fileg.exists())
                         try {
                             fileg.createNewFile();
@@ -190,7 +190,7 @@ public class MainActivity extends Activity implements DataApi.DataListener{
                         public void onClick(DialogInterface dialog, int which) {
                             // TODO Auto-generated method stub
                             System.out.println("alert yes");
-                            File root = new File(Environment.getExternalStorageDirectory() + "/DCIM");
+                            File root = new File(Environment.getExternalStorageDirectory() + "/SensorData");
                             File files[] = root.listFiles();
                             for (File f : files) {
                                 if (f.exists())

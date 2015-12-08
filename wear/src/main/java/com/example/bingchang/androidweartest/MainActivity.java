@@ -71,7 +71,7 @@ public class MainActivity extends WearableActivity implements DataApi.DataListen
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        File root = new File(Environment.getExternalStorageDirectory() + "/DCIM");
+        File root = new File(Environment.getExternalStorageDirectory() + "/SensorData");
         File files[] = root.listFiles();
         for (File f : files) {
             if (f.exists())
@@ -168,9 +168,9 @@ public class MainActivity extends WearableActivity implements DataApi.DataListen
                     }catch(Exception e){
                         e.printStackTrace();
                     }
-                    file  = new File(Environment.getExternalStorageDirectory()+"/DCIM","a.txt");
-                    fileg  = new File(Environment.getExternalStorageDirectory()+"/DCIM","g.txt");
-                    fileh  = new File(Environment.getExternalStorageDirectory()+"/DCIM","h.txt");
+                    file  = new File(Environment.getExternalStorageDirectory()+"/SensorData","a.txt");
+                    fileg  = new File(Environment.getExternalStorageDirectory()+"/SensorData","g.txt");
+                    fileh  = new File(Environment.getExternalStorageDirectory()+"/SensorData","h.txt");
                     String content = new String("");
                     String contentg = new String("");
                     String contenth = new String("");
@@ -227,7 +227,7 @@ public class MainActivity extends WearableActivity implements DataApi.DataListen
     protected void onDestroy(){
         super.onDestroy();
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        File root = new File(Environment.getExternalStorageDirectory() + "/DCIM");
+        File root = new File(Environment.getExternalStorageDirectory() + "/SensorData");
         File files[] = root.listFiles();
         for (File f : files) {
             if (f.exists())

@@ -84,9 +84,9 @@ public class SensorActivity extends WearableActivity implements SensorEventListe
         Calendar c = Calendar.getInstance();
         minstart = c.get(Calendar.MINUTE);
 
-        file   = new File(Environment.getExternalStorageDirectory()+"/DCIM","a.txt");
-        fileg  = new File(Environment.getExternalStorageDirectory()+"/DCIM","g.txt");
-        fileh  = new File(Environment.getExternalStorageDirectory()+"/DCIM","h.txt");
+        file   = new File(Environment.getExternalStorageDirectory()+"/SensorData","a.txt");
+        fileg  = new File(Environment.getExternalStorageDirectory()+"/SensorData","g.txt");
+        fileh  = new File(Environment.getExternalStorageDirectory()+"/SensorData","h.txt");
 
         if(!fileh.exists())
             try {
